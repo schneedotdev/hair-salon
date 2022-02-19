@@ -38,8 +38,24 @@ li {
     list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
+    margin: 0;
     font-family: 'Cinzel', serif;
+}
+
+.button {
+    display: inline-block;
+    background: #000;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
+
+.inner-list,
+.nav-button,
+.button-text,
+.book-text,
+.discount {
+    font-weight: 600;
 }
 
 /*
@@ -72,8 +88,11 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .main-content * {
-    margin-left: 16rem;
     color: white;
+}
+
+.content-container {
+    margin-left: 16rem;
 }
 
 
@@ -88,6 +107,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* - - - - - navigation - - - - - */
 
+.inner-list,
+.nav-button {
+    font-family: 'Cinzel', serif;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+}
+
+.dash {
+    font-size: 2rem;
+    padding: 0 1rem .2rem 0;
+}
 
 /* 
 ---------------- main ----------------
@@ -98,6 +131,57 @@ h1, h2, h3, h4, h5, h6 {
 .main-content {
     background: no-repeat center/100% url("../assets/images/salon-main-img.jpg");
     height: 98rem;
+}
+
+.title {
+    padding-top: 25rem;
+    font-weight: 400;
+    font-size: 9.25rem;
+}
+
+.headline {
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+}
+
+.button-text,
+.first-visit {
+    font-size: 1.25rem;
+}
+
+.first-visit {
+    width: 20%;
+    background: #000;
+    padding: 3rem 0;
+}
+
+.visit-title {
+    padding: 2rem 0 2rem 2rem;
+    border-left: .25rem solid #fff;
+}
+
+.visit-text,
+.book-link {
+    margin-left: 2.25rem;
+}
+
+.visit-text {
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+
+.discount {
+    font-size: 3rem;
+}
+
+.book-link {
+    display: inline-block;
+    background: #fff;
+    padding: 1rem 2rem;
+}
+
+.book-text {
+    color: #000;
 }
 
 /* - - - - - aspects - - - - - */
