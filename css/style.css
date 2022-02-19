@@ -26,11 +26,11 @@ html {
 }
 
 body {
-    font-family: 'Lato', 'Helvetica', 'Corbel', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 a {
-    color: #1865f2;
+    color: #000;
     text-decoration: none;
 }
 
@@ -39,14 +39,90 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Cinzel', serif;
 }
 
 /*
 ================= Layout =================
 */
 
+/* 
+---------------- navigation ----------------
+*/
+
+.nav-list,
+.inner-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list:first-child,
+.nav-list:nth-child(3) {
+    flex-basis: 5%;
+}
+
+.inner-list li {
+    flex-basis: 10%;
+    padding: 0 2.5rem;
+}
+
+/* 
+---------------- main ----------------
+*/
+
+.main-content * {
+    margin-left: 16rem;
+    color: white;
+}
+
+
 
 /*
 ================= Additional Styles =================
 */
+
+/* 
+---------------- header ----------------
+*/
+
+/* - - - - - navigation - - - - - */
+
+
+/* 
+---------------- main ----------------
+*/
+
+/* - - - - - main-content - - - - - */
+
+.main-content {
+    background: no-repeat center/100% url("../assets/images/salon-main-img.jpg");
+    height: 98rem;
+}
+
+/* - - - - - aspects - - - - - */
+
+/* 
+---------------- momentum section ----------------
+*/
+
+/* - - - - - text - - - - - */
+
+
+/* - - - - - image - - - - - */
+
+
+/* 
+---------------- stylists section ----------------
+*/
+
+/* 
+---------------- color section ----------------
+*/
+
+/* 
+---------------- lookbook section ----------------
+*/
+
+/* - - - - - image-container - - - - - */
+
