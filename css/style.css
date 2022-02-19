@@ -50,6 +50,10 @@ h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
     margin: 2rem 0;
 }
 
+.button-text {
+    color: #fff;
+}
+
 .inner-list,
 .nav-button,
 .button-text,
@@ -200,7 +204,9 @@ h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
 .book-link {
     display: inline-block;
     background: #fff;
-    padding: 1rem 3rem;
+    /* padding: 1rem 3rem; */
+
+    padding: 1rem 8%;
 }
 
 .book-text {
@@ -210,14 +216,78 @@ h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
 
 /* - - - - - aspects - - - - - */
 
+.aspects {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 10rem 0;
+}
+
+.aspect-beauticians,
+.aspect-services,
+.aspect-products {
+    width: 20%;
+}
+
+.aspect-img {
+    width: 25%;
+    margin-bottom: 2rem;
+}
+
+.aspect-title {
+    font-size: 1.65rem;
+    margin-bottom: 1.5rem;
+}
+
+.aspect-info {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
 /* 
 ---------------- momentum section ----------------
 */
 
+.momentum {
+    background: #f4f4f4;
+    padding: 8rem 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
 /* - - - - - text - - - - - */
+
+.momentum-left{
+    padding: 0 5rem 0 10rem;
+    width: 50%;
+}
+
+.momentum-title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.momentum-info {
+    line-height: 2;
+    margin-bottom: 3.25rem;
+}
+
+.momentum-btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 0;
+}
 
 
 /* - - - - - image - - - - - */
+
+.momentum-right {
+    width: 50%;
+}
+
+.momentum-img {
+    width: 80%;
+}
 
 
 /* 
