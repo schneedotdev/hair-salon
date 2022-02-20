@@ -62,6 +62,10 @@ h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
     font-weight: 600;
 }
 
+/* .content-spacing {
+    padding: 0 10rem;
+} Add class to elements for uniform ""border"" spacing across website */
+
 /*
 ================= Layout =================
 */
@@ -220,7 +224,7 @@ h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    margin: 10rem 0;
+    margin: 8rem 10rem 10rem 10rem;
 }
 
 .aspect-beauticians,
@@ -294,13 +298,154 @@ h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
 ---------------- stylists section ----------------
 */
 
+.stylists {
+    background: #fff;
+    margin: 0 auto;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    justify-content: space-around;
+    width: 73%;
+}
+
+.stylist {
+    width: 33.3333%;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.stylist-img {
+    width: 100%;
+    z-index: 0;
+}
+
+.stylist-info {
+    font-family: 'Cinzel', serif;
+    display: inline-block;
+    width: 80%;
+    padding: 2rem 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    z-index: 1;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.role {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
 /* 
 ---------------- color section ----------------
 */
+
+.color {
+    background: linear-gradient(#e6e4e5, #f4f4f4);
+    margin: 0 15%;
+}
+.color-container {
+    background: url("../assets/images/banner.jpg") 100% 0 / 70% no-repeat;
+    padding: 6rem 0;
+}
+
+.color-text {
+    margin-left: 5rem;
+    z-index: 1;
+}
+
+.color-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.discount-two {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.color-info {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.color-img {
+    z-index: 0;
+}
+
+.color-btn {
+    margin-bottom: 0;
+}
+
 
 /* 
 ---------------- lookbook section ----------------
 */
 
+.lookbook {
+    text-align: center;
+}
+
+.lookbook-title {
+    margin: 10rem 0 4rem 0;
+    font-size: 4rem;
+}
+
+.line {
+    margin: 0 auto 6rem auto;
+    background: #000;
+    border-radius: .25rem;
+    width: 3.5rem;
+    height: .5rem;
+}
+
 /* - - - - - image-container - - - - - */
 
+.image-container {
+    margin: 0 20rem;
+}
+
+.image-container,
+.column-one,
+.column-two,
+.column-three {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column-one,
+.column-two,
+.column-three {
+    flex-direction: column; 
+}
+
+.one-third,
+.two-thirds {
+    z-index: 1;
+    margin-bottom: 2rem;
+    width: 30rem;
+}
+
+.one-third {
+    height: 30rem;
+}
+
+.two-thirds {
+    height: 60rem;
+}
+
+.one-third:hover {
+    background: blue;
+}
